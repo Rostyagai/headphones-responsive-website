@@ -151,9 +151,9 @@ img {
     top: -100%;
     right: 0;
     padding-block: 5.5rem 4.5rem;
-    background-color: hsla(23, 12%, 4%, 0.12);
+    background-color: hsla(23, 12%, 4%, .4);
     backdrop-filter: blur(32px);
-    /* -webkit-backdrop-filter: blur(32px); */
+    -webkit-backdrop-filter: blur(32px);
     transition: top 0.4s;
   }
 }
