@@ -1,3 +1,4 @@
+<!-- #region head -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,7 +8,10 @@
     <!-- Favicon  -->
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
     <!-- remixicons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
+    />
     <!-- swiper css  -->
     <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
     <!-- css -->
@@ -49,11 +53,16 @@
         </div>
       </nav>
     </header>
+    <!-- #endregion -->
     <main class="main">
       <section class="hero-section section" id="home">
         <div class="hero-section__container container grid">
           <div class="hero-section__content">
-            <img class="hero-section__img" src="./img/home-img.png" alt="JBL headphones" />
+            <img
+              class="hero-section__img"
+              src="./img/home-img.png"
+              alt="JBL headphones"
+            />
             <h1 class="hero-section__title">
               <span>J</span>
               <span>B</span>
@@ -61,11 +70,17 @@
             </h1>
 
             <div class="hero-section__tooltip">
-              <img class="hero-section__tooltip-img" src="./img/tooltip-right.svg" alt="tooltip" />
+              <img
+                class="hero-section__tooltip-img"
+                src="./img/tooltip-right.svg"
+                alt="tooltip"
+              />
               <span class="hero-section__tooltip-text">$150</span>
             </div>
 
-            <a href="#" class="hero-section__button button">Buy now <i class="ri-shopping-cart-2-fill"></i></a>
+            <a href="#" class="hero-section__button button"
+              >Buy now <i class="ri-shopping-cart-2-fill"></i
+            ></a>
 
             <div class="hero-section__socials">
               <span class="hero-section__socials-text">Follow us</span>
@@ -85,8 +100,58 @@
           </div>
         </div>
       </section>
+      <section class="about-section section">
+        <div class="about-section__container container grid">
+          <div class="about-section__content">
+            <h2 class="section__title" id="about">MORE ABOUT US</h2>
+            <p class="about-section__description">
+              Enjoy award-winning JBL sound with wireless listening freedom and a sleek,
+              streamlined design with comfortable cushioned earcups that deliver premium
+              playback for the user.
+            </p>
+            <a class="button" href="#">Know More <i class="ri-information-fill"></i></a>
+          </div>
+          <img
+            class="about-section__img"
+            src="./img/about-img.png"
+            alt="headphones image"
+          />
+        </div>
+      </section>
+      <section class="favorite-section section">
+        <h2 class="section__title">CHOOSE YOUR FAVORITE</h2>
+
+        <div class="favorite-section__container">
+          <div class="favorite-section__swiper swiper">
+            <div class="swiper-wrapper">
+              <article class="favorite-section__article swiper-slide">
+                <img class="favorite-section__img" src="./img/favorite-1.png" alt="headphones" />
+                <span class="favorite-section__model">Black Model</span>
+              </article>
+
+              <article class="favorite-section__article swiper-slide">
+                <img class="favorite-section__img" src="./img/favorite-2.png" alt="headphones" />
+                <span class="favorite-section__model">White Model</span>
+              </article>
+
+              <article class="favorite-section__article swiper-slide">
+                <img class="favorite-section__img" src="./img/favorite-3.png" alt="headphones" />
+                <span class="favorite-section__model">Red Model</span>
+              </article>
+
+              <article class="favorite-section__article swiper-slide">
+                <img class="favorite-section__img" src="./img/favorite-4.png" alt="headphones" />
+                <span class="favorite-section__model">Teal Model</span>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+    <!-- #region footer -->
     <footer class="footer"></footer>
+    <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
+<!-- #endregion -->

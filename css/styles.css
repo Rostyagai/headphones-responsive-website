@@ -151,7 +151,7 @@ img {
     top: -100%;
     right: 0;
     padding-block: 5.5rem 4.5rem;
-    background-color: hsla(23, 12%, 4%, .4);
+    background-color: hsla(23, 12%, 4%, 0.4);
     backdrop-filter: blur(32px);
     -webkit-backdrop-filter: blur(32px);
     transition: top 0.4s;
@@ -185,7 +185,18 @@ img {
 }
 
 /* Add blur header */
-
+.blur-header::after {
+  content: '';
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1000%;
+  height: 100%;
+  backdrop-filter: blur(32px);
+  -webkit-backdrop-filter: blur(32px);
+  z-index: -1;
+}
 /* Active link */
 
 /*=============== HOME ===============*/
@@ -305,11 +316,48 @@ img {
   box-shadow: 0 12px 32px hsla(23, 100%, 50%, 0.12);
 }
 /*=============== ABOUT ===============*/
+.about-section__container {
+  row-gap: 3.5rem;
+}
+.about-section__content {
+  text-align: center;
+}
+.about-section__description {
+  margin-bottom: 1.5rem;
+}
+.about-section__img {
+  width: 280px;
+  justify-self: center;
+}
 
 /*=============== FAVORITE ===============*/
-
+.favorite-section__container{
+  padding-top: 2rem;
+}
+.favorite-section__article{
+  width: 220px;
+  display: grid;
+  justify-items: center;
+  filter: blur(8px);
+  scale: .7;
+  transition: scale 0.5s, filter 0.5s;
+}
+.favorite-section__img{
+  width: 220px;
+  margin-bottom: 1.5rem;
+}
+.favorite-section__model{
+  color: var(--white-color);
+  background: var(--gradient-color);
+  padding: .5rem 1.5rem;
+  border-radius: 4rem;
+}
 /* Swiper class */
-
+.swiper-slide-active,
+.swiper-slide-duplicate-active{
+  filter: blur(0);
+  scale: 1;
+}
 /*=============== MODEL ===============*/
 
 /*=============== SPONSOR ===============*/

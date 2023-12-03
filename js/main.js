@@ -22,11 +22,30 @@ const linkAction = () => {
   navMenu.classList.toggle('show-menu')
 }
 navLinks.forEach(n => n.addEventListener('click', linkAction))
+
+
 /*=============== ADD BLUR HEADER ===============*/
+const header = document.querySelector('#header');
 
 
+const BlurHeader = () => {
+  this.scrollY >= 50 ? header.classList.add('blur-header')
+                     : header.classList.remove('blur-header')
+};
+
+window.addEventListener('scroll', BlurHeader);
 /*=============== SWIPER FAVORITES ===============*/ 
-
+let swiperFavorite = new Swiper('.favorite-section__swiper', {
+  loop: true,
+  slidesPerView: 'auto',
+  centeredSlides: 'auto',
+  grabCursor: true,
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
+    } 
+  }
+});
 
 /*=============== SHOW SCROLL UP ===============*/ 
 
