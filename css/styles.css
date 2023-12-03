@@ -186,7 +186,7 @@ img {
 
 /* Add blur header */
 .blur-header::after {
-  content: '';
+  content: "";
   background: transparent;
   position: absolute;
   top: 0;
@@ -331,32 +331,32 @@ img {
 }
 
 /*=============== FAVORITE ===============*/
-.favorite-section__container{
+.favorite-section__container {
   padding-top: 2rem;
 }
-.favorite-section__article{
+.favorite-section__article {
   width: 220px;
   display: grid;
   justify-items: center;
   filter: blur(8px);
-  scale: .7;
-  transition: scale 0.5s, filter 0.5s;
+  transform: scale(0.7);
+  transition: transform 0.5s, filter 0.5s;
 }
-.favorite-section__img{
+.favorite-section__img {
   width: 220px;
   margin-bottom: 1.5rem;
 }
-.favorite-section__model{
+.favorite-section__model {
   color: var(--white-color);
   background: var(--gradient-color);
-  padding: .5rem 1.5rem;
+  padding: 0.5rem 1.5rem;
   border-radius: 4rem;
 }
 /* Swiper class */
 .swiper-slide-active,
-.swiper-slide-duplicate-active{
+.swiper-slide-duplicate-active {
   filter: blur(0);
-  scale: 1;
+  transform: scale(1);
 }
 /*=============== MODEL ===============*/
 
