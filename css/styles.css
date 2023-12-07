@@ -113,6 +113,15 @@ img {
   overflow: hidden; /* For animation ScrollReveal */
 }
 
+.hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 /*=============== HEADER & NAV ===============*/
 
 .header {
@@ -359,8 +368,81 @@ img {
   transform: scale(1);
 }
 /*=============== MODEL ===============*/
+.model-section__container {
+  padding-top: 2rem;
+  row-gap: 2.5rem;
+}
+.model-section__content {
+  position: relative;
+}
+.model-section__img {
+  width: 280px;
+  justify-self: center;
+  margin: 0 auto;
+}
+.model-section__tooltip {
+  position: absolute;
+}
+.model-section__tooltip-img {
+  width: 60px;
+}
+.model-section__tooltip-text {
+  position: absolute;
+  transform: translate(60px, -40px);
+  background: var(--gradient-color);
+  padding: 0.25rem 0.75rem;
+  border-radius: 4rem;
+  font-size: var(--small-font-size);
+  color: var(--white-color);
+  font-weight: var(--font-semi-bold);
+  white-space: nowrap;
+}
 
+.model-section__tooltip-1,
+.model-section__tooltip-2 {
+  transform: scaleX(-1);
+}
+
+.model-section__tooltip-1 .model-section__tooltip-text,
+.model-section__tooltip-2 .model-section__tooltip-text {
+  transform: translate(60px, -40px) scaleX(-1);
+}
+
+.model-section__tooltip-1 {
+  top: 5.5rem;
+  left: 6.5rem;
+}
+.model-section__tooltip-2 {
+  top: 1rem;
+  right: 3rem;
+}
+.model-section__tooltip-3 {
+  bottom: 2.5rem;
+  left: 4rem;
+}
+.model-section__tooltip-4 {
+  bottom: 7rem;
+  right: 6rem;
+}
+
+.model-section__button {
+  justify-self: center;
+}
 /*=============== SPONSOR ===============*/
+.sponsors-section__img {
+  width: 100px;
+  transition: transform 0.4s;
+}
+.sponsors-section__img:hover {
+  transform: scale(1.1);
+}
+.sponsors-section__container {
+  padding-block: 0.5rem 4.5rem;
+  grid-template-columns: repeat(2, max-content);
+  justify-content: center;
+  align-items: center;
+  gap: 5rem 4rem;
+}
 
 /*=============== FOOTER ===============*/
 
