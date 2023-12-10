@@ -48,8 +48,12 @@ let swiperFavorite = new Swiper('.favorite-section__swiper', {
 });
 
 /*=============== SHOW SCROLL UP ===============*/ 
-
-
+const scrollUpBtn = document.querySelector('#scroll-up');
+const ScrollUp = () => {
+  this.scrollY >= 350 ? scrollUpBtn.classList.add('show-scroll')
+                      : scrollUpBtn.classList.remove('show-scroll') 
+}
+window.addEventListener('scroll', ScrollUp)
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
 

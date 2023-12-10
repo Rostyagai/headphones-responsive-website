@@ -35,11 +35,11 @@
             </li>
 
             <li class="nav__item">
-              <a href="#favorites" class="nav__link">Favorites</a>
+              <a href="#favorite" class="nav__link">Favorites</a>
             </li>
 
             <li class="nav__item">
-              <a href="#models" class="nav__link">Models</a>
+              <a href="#model" class="nav__link">Models</a>
             </li>
           </ul>
 
@@ -105,8 +105,8 @@
           <img class="about-section__img" src="./img/about-img.png" alt="headphones image" />
         </div>
       </section>
-      <section class="favorite-section section">
-        <h2 class="section__title">CHOOSE YOUR FAVORITE</h2>
+      <section class="favorite-section section" id="favorite">
+        <h2 class="section__title" id="favorite">CHOOSE YOUR FAVORITE</h2>
 
         <div class="favorite-section__container">
           <div class="favorite-section__swiper swiper">
@@ -134,8 +134,8 @@
           </div>
         </div>
       </section>
-      <section class="model-section section">
-        <h2 class="section__title">MODEL SPECIFICATIONS</h2>
+      <section class="model-section section" >
+        <h2 class="section__title" id="model">MODEL SPECIFICATIONS</h2>
         <div class="model-section__container container grid">
           <div class="model-section__content">
             <img src="./img/model-img.png" alt="model image" class="model-section__img" />
@@ -162,7 +162,7 @@
         </div>
       </section>
       <section class="sponsors-section section">
-        <h2 class="hidden">Our sponsors</h2>
+        <h2 class="hidden" id="sponsors">Our sponsors</h2>
         <div class="sponsors-section__container container grid">
           <a href="#">
             <img src="./img/sponsor-1.png" alt="Apple" class="sponsors-section__img" />
@@ -178,6 +178,58 @@
           </a>
         </div>
       </section>
+      <footer class="footer">
+        <div class="footer__container container grid">
+          <div>
+            <a href="index.html" class="footer__logo">JBL</a>
+          </div>
+          <div class="footer__data grid">
+            <div>
+              <h3 class="footer__title">Products</h3>
+              <ul class="footer__links">
+                <li><a href="#" class="footer__link">Headphones</a></li>
+                <li><a href="#" class="footer__link">Earphones</a></li>
+                <li><a href="#" class="footer__link">Earbuds</a></li>
+                <li><a href="#" class="footer__link">Accesories</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="footer__title">Support</h3>
+              <ul class="footer__links">
+                <li><a href="#" class="footer__link">Product Help</a></li>
+                <li><a href="#" class="footer__link">Register</a></li>
+                <li><a href="#" class="footer__link">Updates</a></li>
+                <li><a href="#" class="footer__link">Provides</a></li>
+              </ul>
+            </div>
+            <div class="footer__group">
+              <form action="" class="footer__form">
+                <input type="email" placeholder="Email" class="footer__input" />
+                <button class="footer__button button">
+                  Subscribe <i class="ri-send-plane-fill"></i>
+                </button>
+              </form>
+
+              <div class="footer__social">
+                <a href="https://www.instagram.com/" target="_blank" class="footer__social-link"
+                  ><i class="ri-instagram-fill"></i
+                ></a>
+                <a href="https://www.facebook.com/" target="_blank" class="footer__social-link"
+                  ><i class="ri-facebook-circle-fill"></i
+                ></a>
+                <a href="https://www.youtube.com/" target="_blank" class="footer__social-link"
+                  ><i class="ri-youtube-fill"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <span class="footer__copy">
+          &#169; All Rights Reserved By Alexander Rostyagai, <br />
+          idea by Bedimcode
+        </span>
+      </footer>
+      <a href="#home" class="scrollup" id="scroll-up"><i class="ri-arrow-up-s-line"></i></a>
     </main>
     <!-- #region footer -->
     <footer class="footer"></footer>
